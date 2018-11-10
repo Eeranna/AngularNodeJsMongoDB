@@ -52,4 +52,11 @@ app.get('/getHotels',function(req,res){
     res.send(data);
   });
 });
+
+var db2=mongojs('example',['zomato']);
+app.get('/getZomato',function(req,res){
+  db2.zomato.find({},function(err,data){
+    res.send(data);
+  });
+});
 app.listen(3000);

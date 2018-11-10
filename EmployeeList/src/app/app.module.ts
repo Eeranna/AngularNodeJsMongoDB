@@ -16,6 +16,7 @@ import {MenuComponent} from './menu/menu.component';
 import {AboutComponent} from './menulinks/about/about.component';
 import {GovernanceComponent} from './menulinks/governance/governance.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ZomatoComponent } from './zomato/zomato.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HeaderComponent,
     MenuComponent,
     AboutComponent,
-    GovernanceComponent
+    GovernanceComponent,
+    ZomatoComponent
   ],
   imports: [
     BrowserModule,
